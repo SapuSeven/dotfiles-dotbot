@@ -108,7 +108,7 @@ click-right = ~/.config/polybar/scripts/launcher_menu_extended.sh
 
 [module/workspaces]
 type = internal/xworkspaces
-pin-workspaces = false
+pin-workspaces = true
 enable-click = true
 enable-scroll = false
 format-padding = 0
