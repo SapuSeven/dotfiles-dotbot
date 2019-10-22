@@ -204,4 +204,6 @@ bindsym $mod+Tab exec "~/.config/scripts/lock.sh"
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /home/reik/.config/i3/toggletouchpad.sh # toggle touchpad
 
+for_window [class="Nm-connection-editor"] floating enable
+
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
