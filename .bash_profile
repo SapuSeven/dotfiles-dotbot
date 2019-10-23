@@ -4,7 +4,7 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-SSH_ENV="$HOME/.ssh/environment"
+SSH_ENV="$HOME/.ssh/env"
 
 function start_agent {
     echo "Initialising new SSH agent..."
