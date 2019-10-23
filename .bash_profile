@@ -26,6 +26,3 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
-
-# Aliases
-alias ulocate="sudo updatedb && locate"
