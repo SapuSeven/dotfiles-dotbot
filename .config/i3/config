@@ -14,7 +14,6 @@ font pango:Noto Sans 10
 floating_modifier $mod
 default_border normal
 default_floating_border pixel 2
-gaps inner 12
 
 # Color settings        border  bground text  indicator child_border
 client.focused          #FFB52A #FFB52A #000000 #FFB52A #FFB52A
