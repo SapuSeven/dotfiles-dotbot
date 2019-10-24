@@ -4,6 +4,8 @@
 
 [[ $- != *i* ]] && return
 
+source .aliases
+
 colors() {
 	local fgc bgc vals seq0
 
