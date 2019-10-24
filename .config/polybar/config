@@ -43,8 +43,8 @@ padding-right = 2
 module-margin = 2
 separator = %{F#555}|%{F-}
 
-font-0 = fixed:size=10;1
-font-1 = Hack Nerd Font:style=Regular:size=12;2
+font-0 = fixed:size=10;4
+font-1 = Hack Nerd Font:style=Regular:size=12;4
 
 modules-left = i3
 modules-center = mpd
@@ -319,7 +319,7 @@ label-close-foreground = ${colors.primary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
-menu-0-0 = Lock
+menu-0-0 = "Lock "
 menu-0-0-exec = ~/.config/scripts/lock.sh
 menu-0-1 = Logout
 menu-0-1-exec = i3exit logout
