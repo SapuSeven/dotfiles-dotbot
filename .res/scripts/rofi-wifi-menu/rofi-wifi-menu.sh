@@ -14,8 +14,8 @@ FONT="DejaVu Sans Mono 10"
 
 # Get mouse position and screen dimensions
 eval $(xdotool getmouselocation --shell)
-LINE=$(expr $SCREEN + 1)
-SCREENWIDTH=$(xrandr --current | grep '*' | sed "${LINE}q;d" |  awk '{print $1}' | cut -d 'x' -f1)
+MONITOR=$(expr $SCREEN + 1)
+SCREENWIDTH=$(xrandr --current | grep '*' |  awk -v line="$MONITOR" 'NR==line{print $1}' | cut -d 'x' -f1)
 
 if [ -r "$DIR/config" ]; then
 	source "$DIR/config"
