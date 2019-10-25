@@ -287,7 +287,8 @@ animation-charging-foreground = ${colors.primary}
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 60
+base-temperature = 20
+warn-temperature = 90
 
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
