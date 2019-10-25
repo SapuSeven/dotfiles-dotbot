@@ -19,7 +19,7 @@ default_floating_border pixel 2
 client.focused          #FFB52A #FFB52A #000000 #FFB52A #FFB52A
 client.focused_inactive #222222 #222222 #DFDFDF #222222 #222222
 client.unfocused        #222222 #222222 #DFDFDF #222222 #222222
-client.urgent           #2F343A #BD2C40 #DFDFDF #BD2C40 #BD2C40
+client.urgent           #BD2C40 #BD2C40 #DFDFDF #BD2C40 #BD2C40
 client.placeholder      #222222 #222222 #DFDFDF #222222 #222222
 client.background       #222222
 
