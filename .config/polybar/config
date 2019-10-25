@@ -28,7 +28,7 @@ alert = #bd2c40
 [bar/main]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 27
+height = 27 
 fixed-center = false
 
 background = ${colors.background}
@@ -197,11 +197,7 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 直
 ramp-signal-foreground = ${colors.primary}
 
 [module/eth]
