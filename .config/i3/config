@@ -200,6 +200,6 @@ bindsym $mod+Ctrl+Shift+Left resize grow width 1 px or 1 ppt
 bindsym $mod+Tab exec --no-startup-id "~/.config/scripts/lock.sh"
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /home/reik/.config/i3/toggletouchpad.sh # toggle touchpad
+bindsym XF86TouchpadToggle exec ~/.res/scripts/touchpad-toggle.sh # toggle touchpad
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
