@@ -275,7 +275,7 @@ animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-5 = 
-animation-charging-6 = 
+animation-charging-6 = 
 animation-charging-foreground = ${colors.primary}
 
 [module/temperature]
