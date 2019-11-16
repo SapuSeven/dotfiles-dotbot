@@ -1,5 +1,8 @@
 set $mod Mod4
 
+# Set keyboard layout
+exec --no-startup-id setxkbmap at nodeadkeys
+
 # Setup background
 exec --no-startup-id xsetroot -solid "#222222"
 exec --no-startup-id feh --bg-fill ~/.res/wallpapers/FalconHeavyNightLaunch.jpg
@@ -12,8 +15,15 @@ workspace 2 output DVI-D-0
 # General settings
 font pango:Noto Sans 10
 floating_modifier $mod
-default_border normal
+default_border pixel 2
 default_floating_border pixel 2
+
+# Configure border style <normal|1pixel|pixel xx|none|pixel>
+#default_border pixel 1
+#default_floating_border normal
+
+# Hide borders
+#hide_edge_borders none
 
 # Color settings        border  bground text  indicator child_border
 client.focused          #FFB52A #FFB52A #000000 #FFB52A #FFB52A
@@ -37,6 +47,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 #exec --no-startup-id nm-applet
 
+floating_modifier $mod
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && $refresh_i3status
@@ -46,7 +58,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # program shortcuts
 bindsym $mod+Return exec urxvt
-bindsym $mod+e exec dolphin
+bindsym $mod+e exec pcmanfm
 bindsym $mod+f exec firefox
 
 # kill focused window
@@ -58,6 +70,10 @@ bindsym $mod+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 bindsym $mod+d exec --no-startup-id "i3-dmenu-desktop --dmenu='dmenu -i -h 27 -nf #DFDFDF -nb #222222 -sb #FFB52A -sf #000000'"
+
+# toggle title bar
+bindsym $mod+t border normal
+bindsym $mod+Shift+t border pixel 2
 
 # change focus
 bindsym $mod+j focus left
@@ -205,3 +221,24 @@ bindsym $mod+Tab exec --no-startup-id "~/.config/scripts/lock.sh"
 bindsym XF86TouchpadToggle exec ~/.res/scripts/touchpad-toggle.sh # toggle touchpad
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
+exec always --no-startup-id lxqt-policykit-agent &
+
+#############################
+### settings for i3-gaps: ###
+#############################
+
+# Set inner/outer gaps
+#gaps inner 8
+#gaps outer -2
+
+# Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
+# gaps inner|outer current|all set|plus|minus <px>
+# gaps inner all set 10
+# gaps outer all plus 5
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+#smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+#smart_borders on
