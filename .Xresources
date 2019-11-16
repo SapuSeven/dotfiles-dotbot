@@ -6,7 +6,7 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-XTerm*background:        #222D31
+XTerm*background:        #222222
 XTerm*foreground:        #d8d8d8
 XTerm*pointerColor:      #1ABB9B
 XTerm*faceName:          Fixed
@@ -14,41 +14,41 @@ XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-*background:                      #222D31
-*foreground:                      #d8d8d8
+*background:                      #222222
+*foreground:                      #e8e8e8
 *fading:                          8
 *fadeColor:                       black
-*cursorColor:                     #1ABB9B
-*pointerColorBackground:          #2B2C2B
-*pointerColorForeground:          #16A085
+*cursorColor:                     #ffc107
+*pointerColorBackground:          #222222
+*pointerColorForeground:          #ffc107
 
 !! black dark/light
 *color0:                          #222D31
 *color8:                          #585858
 
 !! red dark/light
-*color1:                          #ab4642
-*color9:                          #ab4642
+*color1:                          #d32f2f
+*color9:                          #f44336
 
 !! green dark/light
-*color2:                          #7E807E
-*color10:                         #8D8F8D
+*color2:                          #388e3c
+*color10:                         #4caf50
 
 !! yellow dark/light
-*color3:                          #f7ca88
-*color11:                         #f7ca88
+*color3:                          #ffa000
+*color11:                         #ffc107
 
 !! blue dark/light
-*color4:                          #7cafc2
-*color12:                         #7cafc2
+*color4:                          #1976d2
+*color12:                         #2196f3
 
 !! magenta dark/light
-*color5:                          #ba8baf
-*color13:                         #ba8baf
+*color5:                          #c2185b
+*color13:                         #e91e63
 
 !! cyan dark/light
-*color6:                          #1ABB9B
-*color14:                         #1ABB9B
+*color6:                          #0097a7
+*color14:                         #00bcd4
 
 !! white dark/light
 *color7:                          #d8d8d8
@@ -57,7 +57,7 @@ XTerm*selectToClipboard: true
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
 
-URxvt.font:     xft:bitstream vera sans mono:size=10:antialias=true
+URxvt.font:     xft:bitstream vera sans mono:size=10:antialias=true,xft:TerminessTTFNerdFontMono
 URxvt.boldFont: xft:bitstream vera sans mono:bold:size=10:antialias=true
 
 ! alternative font settings with 'terminus':
@@ -66,8 +66,12 @@ URxvt.boldFont: xft:bitstream vera sans mono:bold:size=10:antialias=true
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#222D31
-URxvt*scrollBar:                  false
+URxvt.background:                 [100]#222222
+URxvt*scrollBar:                  true
+URxvt*scrollBar_right:            true
+URxvt*scrollColor:                #d8d8d8
+URxvt*scrollstyle:                plain
+URxvt*thickness:                  12
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
 URxvt*background:                 black
