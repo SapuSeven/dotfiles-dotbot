@@ -5,6 +5,8 @@ alias df="df -h" # human-readable sizes
 alias free="free -m" # show sizes in MB
 alias np="nano -w PKGBUILD"
 alias more="less"
+alias pac="sudo pacman --noconfirm"
+alias tri="trizen --noedit --noconfirm"
 
 # Dotfile Config
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
