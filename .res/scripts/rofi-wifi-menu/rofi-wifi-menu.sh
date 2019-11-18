@@ -7,7 +7,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 FIELDS=SSID,SECURITY
 POSITION=0
-YOFF=0
+YOFF=27
 XOFF=0
 FONT="DejaVu Sans Mono 10"
 
@@ -49,14 +49,24 @@ elif [[ "$CONSTATE" =~ "disabled" ]]; then
 	TOGGLE="toggle on"
 fi
 
+XOFF=$(expr $SCREENWIDTH - $X - 50)
+echo $YOFF - $XOFF
+
+if [[ "$1" == "center" ]]; then
+    POSITION=0
+    XOFF=0
+    YOFF=0
+fi
+
+((LINENUM += 2))
 if [[ "$CONSTATE" =~ "enabled" ]]; then
     if [ "$LINENUM" -gt 8 ]; then
         LINENUM=8
     fi
     
-    CHENTRY=$(echo -e "$NETWORKS\nmanual\n$TOGGLE" | uniq -u | rofi -dmenu -p "Wi-Fi SSID" -lines "$LINENUM" -a "$HIGHLINE" -location "$POSITION" -yoffset "$YOFF" -xoffset -$(expr $SCREENWIDTH - $X - 50) -font "$FONT" -width -"$RWIDTH")
+    CHENTRY=$(echo -e "$NETWORKS\nmanual\n$TOGGLE" | uniq -u | rofi -dmenu -p "Wi-Fi SSID" -lines "$LINENUM" -a "$HIGHLINE" -location "$POSITION" -yoffset "$YOFF" -xoffset -"$XOFF" -font "$FONT" -width -"$RWIDTH")
 elif [[ "$CONSTATE" =~ "disabled" ]]; then
-    CHENTRY=$(echo -e "$TOGGLE" | rofi -dmenu -p "Wi-Fi SSID" -lines 1 -location "$POSITION" -yoffset "$YOFF" -xoffset -$(expr $SCREENWIDTH - $X - 50) -font "$FONT" -width -32)
+    CHENTRY=$(echo -e "$TOGGLE" | rofi -dmenu -p "Wi-Fi SSID" -lines 1 -location "$POSITION" -yoffset "$YOFF" -xoffset -"$XOFF" -font "$FONT" -width -32)
 fi
 
 
@@ -98,7 +108,7 @@ else
 		nmcli con up "$CHSSID"
 	else
 		if [[ "$CHENTRY" =~ "WPA2" ]] || [[ "$CHENTRY" =~ "WEP" ]]; then
-			WIFIPASS=$(echo "if connection is stored, hit enter" | rofi -dmenu -p "password: " -lines 1 -font "$FONT" )
+			WIFIPASS=$(echo "if connection is stored, hit enter" | rofi -dmenu -p "Password" -lines 1 -font "$FONT" )
 		fi
 		nmcli dev wifi con "$CHSSID" password "$WIFIPASS"
 	fi
