@@ -4,7 +4,7 @@
 
 [[ $- != *i* ]] && return
 
-source .aliases
+source ~/.aliases
 
 colors() {
 	local fgc bgc vals seq0
@@ -74,7 +74,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
+		PS1='\[\033[01;33m\][\u@\h\[\033[01;37m\] \W\[\033[01;33m\]]\$\[\033[00m\] '
 	fi
 
 	alias ls='ls --color=auto'
