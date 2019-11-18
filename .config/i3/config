@@ -48,6 +48,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym $mod+Return exec konsole
 bindsym $mod+e exec dolphin
 bindsym $mod+f exec firefox
+bindsym $mod+w exec "~/.res/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
 
 # kill focused window
 bindsym $mod+q kill
@@ -202,6 +203,6 @@ bindsym $mod+Ctrl+Shift+Left resize grow width 1 px or 1 ppt
 bindsym $mod+Tab exec --no-startup-id "~/.config/scripts/lock.sh"
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec ~/.res/scripts/touchpad-toggle.sh # toggle touchpad
+bindsym XF86TouchpadToggle exec --no-startup-id ~/.res/scripts/touchpad-toggle.sh # toggle touchpad
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
