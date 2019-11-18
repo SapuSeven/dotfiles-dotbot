@@ -220,8 +220,8 @@ interval = 1
 time = %H:%M
 time-alt = %d.%m.%Y %H:%M:%S
 
-format-prefix = ""
-format-prefix-padding = 2
+format-prefix = " "
+format-prefix-padding = 0
 format-prefix-foreground = ${colors.primary}
 
 label = %time%
