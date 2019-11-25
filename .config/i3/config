@@ -3,14 +3,17 @@ set $mod Mod4
 # Set keyboard layout
 exec --no-startup-id setxkbmap at nodeadkeys
 
+# Multi monitor setup
+exec --no-startup-id xrandr --output DP-4 --mode 1920x1080 --rate 144 --primary --left-of DVI-D-0
+workspace 1 output DP-4
+workspace 2 output DVI-D-0
+
 # Setup background
 exec --no-startup-id xsetroot -solid "#222222"
 exec --no-startup-id feh --bg-fill ~/.res/wallpapers/FalconHeavyNightLaunch.jpg
 
-# Fix for multiple monitors
-exec --no-startup-id xrandr --output DP-4 --primary --left-of DVI-D-0
-workspace 1 output DP-4
-workspace 2 output DVI-D-0
+# Origin floating window fix
+for_window [instance="origin.exe"] floating enable
 
 # General settings
 font pango:Noto Sans 10
