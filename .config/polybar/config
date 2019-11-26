@@ -47,8 +47,8 @@ font-0 = fixed:size=10;4
 font-1 = Symbols Nerd Font:style=Regular:size=12;4
 
 modules-left = i3
-modules-center = mpd
-modules-right = volume wlan eth memory cpu battery temperature date powermenu
+;modules-center = mpd
+modules-right = mpd volume wlan eth memory cpu battery temperature date powermenu
 
 ;tray-position = right
 ;tray-padding = 2
@@ -136,8 +136,8 @@ label-urgent-padding = 2
 
 [module/mpd]
 type = internal/mpd
-format-online = <icon-prev>  <icon-stop>  <toggle>  <icon-next>   <label-time> <label-song>
-format-stopped = <icon-prev>  <toggle>  <icon-next>   mpd is stopped
+format-online =  <label-song> | <label-time>   <icon-prev>  <icon-stop>  <toggle>  <icon-next>
+format-stopped = <icon-prev>  <toggle>  <icon-next>
 
 label-offline = ﱘ mpd is offline
 label-song = %artist% - %title%
