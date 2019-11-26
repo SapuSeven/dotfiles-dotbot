@@ -136,15 +136,20 @@ label-urgent-padding = 2
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <icon-prev>  <icon-stop>  <toggle>  <icon-next>   <label-time> <label-song>
+format-stopped = <icon-prev>  <toggle>  <icon-next>   mpd is stopped
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+label-offline = ﱘ mpd is offline
+label-song = %artist% - %title%
+label-time = %elapsed% / %total%
 
-label-song-maxlen = 25
+icon-prev = 玲
+icon-stop = 栗
+icon-play = 契
+icon-pause = 
+icon-next = 怜
+
+label-song-maxlen = 100
 label-song-ellipsis = true
 
 [module/xbacklight]
