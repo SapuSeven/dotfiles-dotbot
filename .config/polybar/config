@@ -227,11 +227,8 @@ format-prefix-foreground = ${colors.primary}
 label = %time%
 
 [module/volume]
-type = internal/alsa
-;speaker-mixer = Speaker
-;headphone-mixer = Headphone
-;headphone-id = 16
-;mapped = true
+type = internal/pulseaudio
+interval = 2
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%%
 format-muted-prefix = "婢  "
