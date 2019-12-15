@@ -232,6 +232,7 @@ bindsym XF86TouchpadToggle exec --no-startup-id ~/.res/scripts/touchpad-toggle.s
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec always --no-startup-id lxqt-policykit-agent &
+exec_always --no-startup-id numlockx on
 
 #############################
 ### settings for i3-gaps: ###
