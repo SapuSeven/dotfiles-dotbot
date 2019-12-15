@@ -50,8 +50,9 @@ modules-left = i3
 ;modules-center = mpd
 modules-right = mpd volume wlan eth memory cpu battery temperature date powermenu
 
-;tray-position = right
-;tray-padding = 2
+tray-position = center
+tray-padding = 2
+tray-offset-x = -40%
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
