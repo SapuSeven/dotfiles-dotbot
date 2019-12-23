@@ -9,6 +9,7 @@ alias more="less"
 alias xclip="xclip -selection c"
 alias pac="sudo pacman --noconfirm"
 alias tri="trizen --noedit --noconfirm"
+alias ports="lsof -i -P -n | grep LISTEN"
 
 # Dotfile Config
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
