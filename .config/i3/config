@@ -65,7 +65,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 # program shortcuts
 bindsym $mod+Return exec urxvt
 bindsym $mod+e exec pcmanfm
-bindsym $mod+f exec firefox
+bindsym $mod+f exec firefox-developer-edition
 bindsym $mod+w exec "~/.res/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
 
 # kill focused window
@@ -233,6 +233,12 @@ bindsym XF86TouchpadToggle exec --no-startup-id ~/.res/scripts/touchpad-toggle.s
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec always --no-startup-id lxqt-policykit-agent &
 exec_always --no-startup-id numlockx on
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioStop exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 #############################
 ### settings for i3-gaps: ###
