@@ -32,7 +32,8 @@ if [[ "$CONSTATE" =~ "enabled" ]]; then
 
     NETWORKS=$(nmcli --fields "$FIELDS" device wifi list | awk 'NR>1' | sed '/^--/d')
     # For some reason rofi always approximates character width 2 short... hmmm
-    RWIDTH=$(($(echo "$NETWORKS" | head -n 1 | awk '{print length($0); }')+2))
+    MINWIDTH=32
+    RWIDTH=$(dc -e "[$MINWIDTH]sM $(($(echo "$NETWORKS" | head -n 1 | awk '{print length($0); }')+2))d $MINWIDTH>Mp")
     # Dynamically change the height of the rofi menu
     LINENUM=$(echo "$NETWORKS" | wc -l)
     # Gives a list of known connections so we can parse it later
