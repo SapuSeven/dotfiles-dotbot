@@ -63,7 +63,7 @@ if [[ "$CONSTATE" =~ "enabled" ]]; then
     if [ "$LINENUM" -gt 8 ]; then
         LINENUM=8
     fi
-    
+
     CHENTRY=$(echo -e "$NETWORKS\nmanual\n$TOGGLE" | uniq -u | rofi -dmenu -p "Wi-Fi SSID" -lines "$LINENUM" -a "$HIGHLINE" -location "$POSITION" -yoffset "$YOFF" -xoffset -"$XOFF" -font "$FONT" -width -"$RWIDTH")
 elif [[ "$CONSTATE" =~ "disabled" ]]; then
     CHENTRY=$(echo -e "$TOGGLE" | rofi -dmenu -p "Wi-Fi SSID" -lines 1 -location "$POSITION" -yoffset "$YOFF" -xoffset -"$XOFF" -font "$FONT" -width -32)
@@ -71,7 +71,6 @@ fi
 
 
 CHSSID=$(echo "$CHENTRY" | sed  's/\s\{2,\}/\|/g' | awk -F "|" '{print $1}')
-#echo "$CHSSID"
 
 # If the user inputs "manual" as their SSID in the start window, it will bring them to this screen
 if [ "$CHENTRY" = "manual" ] ; then
