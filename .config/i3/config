@@ -9,8 +9,7 @@ workspace 1 output DP-4
 workspace 2 output DVI-D-0
 
 # Setup background
-exec --no-startup-id xsetroot -solid "#222222"
-exec --no-startup-id feh --bg-fill ~/.res/wallpapers/FalconHeavyNightLaunch.jpg
+exec --no-startup-id nitrogen --restore &
 
 # Origin floating window fix
 for_window [instance="origin.exe"] floating enable
