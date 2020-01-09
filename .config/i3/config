@@ -73,6 +73,8 @@ bindsym XF86AudioStop exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Power button
+bindsym XF86PowerOff exec "~/.config/scripts/power-menu.sh"
 
 
 # program shortcuts
