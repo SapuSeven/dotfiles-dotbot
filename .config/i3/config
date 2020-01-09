@@ -65,7 +65,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec --no-startup-id ~/.res/scripts/touchpad-toggle.sh # toggle touchpad
+bindsym XF86TouchpadToggle exec --no-startup-id ~/.config/scripts/touchpad-toggle.sh # toggle touchpad
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -79,7 +79,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+Return exec urxvt
 bindsym $mod+e exec pcmanfm
 bindsym $mod+f exec firefox-developer-edition
-bindsym $mod+w exec "~/.res/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
+bindsym $mod+w exec "~/.config/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
 
 # kill focused window
 bindsym $mod+q kill
