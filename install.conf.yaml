@@ -24,8 +24,8 @@
     ~/.Xresources: .Xresources
     ~/.nanorc: .nanorc
 
-    ~/.icons: .icons
-    ~/.local/share/fonts/Symbols\ Nerd\ Font.ttf: .local/share/fonts/Symbols\ Nerd\ Font.ttf
+    ~/.icons: .icons/
+    ~/.local/share/fonts/: .local/share/fonts/
     ~/.themes: .themes/
     
     ~/Templates: Templates
