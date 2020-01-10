@@ -137,15 +137,10 @@ ex ()
 # better yaourt colors
 export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 
+# keyboard layout fix
+setxkbmap at nodeadkeys
+
 eval $(keychain --eval)
-
-export GOOGLE_APPLICATION_CREDENTIALS="/run/media/paul/Data/Development/GoogleCloud/WaveNetTest/WaveNetTest-d98420cdc133.json"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/run/media/paul/Data/Development/GoogleCloud/google-cloud-sdk/path.bash.inc' ]; then . '/run/media/paul/Data/Development/GoogleCloud/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/run/media/paul/Data/Development/GoogleCloud/google-cloud-sdk/completion.bash.inc' ]; then . '/run/media/paul/Data/Development/GoogleCloud/google-cloud-sdk/completion.bash.inc'; fi
 
 # Yakuake blur background fix
 if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake$' ]]; then
