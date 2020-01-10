@@ -1,0 +1,31 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/Kvantum: .config/Kvantum/
+    ~/.config/gtk-3.0: .config/gtk-3.0/
+    ~/.config/i3: .config/i3/
+    ~/.config/nitrogen: .config/nitrogen/
+    ~/.config/polybar: .config/polybar/
+    ~/.config/ranger: .config/ranger/
+    ~/.config/rofi: .config/rofi/
+    ~/.config/scripts: .config/scripts/
+    ~/.config/twmn: .config/twmn/
+    ~/.config/wallpapers: .config/wallpapers/
+
+    ~/.aliases: .aliases
+    ~/.bashrc: .bashrc
+    ~/.bash_profile: .bash_profile
+    ~/.xinitrc: .xinitrc
+    ~/.Xresources: .Xresources
+    ~/.nanorc: .nanorc
+
+    ~/.icons: .icons
+    ~/.local/share/fonts/Symbols\ Nerd\ Font.ttf: .local/share/fonts/Symbols\ Nerd\ Font.ttf
+    ~/.themes: .themes/
+    
+    ~/Templates: Templates
