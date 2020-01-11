@@ -1,15 +1,19 @@
 The dotfiles should work on any Arch-based system.
 
-<!--# Automatic installation using my pacman repository
+# Automatic installation
 
-1. Modify `/etc/pacman.conf` and add the following lines:
+This will place all customized dotfiles inside `~/.dotfiles` and symlink accordingly.
 
-    [sapuseven]
-    SigLevel = Never
-    Server = http://repo.sapuseven.com/$arc-->
+    git clone https://github.com/SapuSeven/dotfiles.git ~/.dotfiles
+    cd ~/.dotfiles
+    ./install
 
 
-# Manually install the dotfiles on a new machine
+# Manual installation (deprecated)
+
+This will clone the dotfiles directly to your home directory.
+
+Use `config` instead of `git` anywhere to manage the repository.
 
     pacman -Syu --needed --noconfirm git
 
