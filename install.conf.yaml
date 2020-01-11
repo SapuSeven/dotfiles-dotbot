@@ -17,6 +17,8 @@
     ~/.config/twmn: .config/twmn/
     ~/.config/wallpapers: .config/wallpapers/
 
+    ~/.config/mimeapps.list: .config/mimeapps.list
+
     ~/.aliases: .aliases
     ~/.bashrc: .bashrc
     ~/.bash_profile: .bash_profile
@@ -25,7 +27,7 @@
     ~/.nanorc: .nanorc
 
     ~/.icons: .icons/
-    ~/.local/share/fonts/: .local/share/fonts/
+    ~/.local/share/fonts: .local/share/fonts/
     ~/.themes: .themes/
-    
+
     ~/Templates: Templates
