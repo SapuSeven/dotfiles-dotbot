@@ -6,6 +6,7 @@
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
+userkbmap=$HOME/.Xkbmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
@@ -27,6 +28,10 @@ fi
 
 if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
+fi
+
+if [ -f "$userkbmap" ]; then
+    setxkbmap "$userkbmap"
 fi
 
 # start some nice programs

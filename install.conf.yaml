@@ -25,6 +25,7 @@
     ~/.xinitrc: .xinitrc
     ~/.Xresources: .Xresources
     ~/.nanorc: .nanorc
+    ~/.Xkbmap: .Xkbmap
 
     ~/.icons: .icons/
     ~/.local/share/fonts: .local/share/fonts/
