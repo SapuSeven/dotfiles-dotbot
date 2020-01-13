@@ -13,6 +13,7 @@
     ~/.config/polybar: .config/polybar/
     ~/.config/qt5ct: .config/qt5ct/
     ~/.config/ranger: .config/ranger/
+    ~/.config/rofi-pass: .config/rofi-pass/
     ~/.config/rofi: .config/rofi/
     ~/.config/scripts: .config/scripts/
     ~/.config/twmn: .config/twmn/
