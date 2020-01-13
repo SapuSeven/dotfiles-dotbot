@@ -80,7 +80,7 @@ bindsym XF86PowerOff exec "~/.config/scripts/power-menu.sh"
 bindsym $mod+Return exec urxvt
 bindsym $mod+e exec pcmanfm
 bindsym $mod+f exec firefox-developer-edition
-bindsym $mod+w exec "~/.config/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
+bindsym $mod+w exec --no-startup-id "~/.config/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
 
 # kill focused window
 bindsym $mod+q kill
