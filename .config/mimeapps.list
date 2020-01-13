@@ -1,4 +1,5 @@
 [Default Applications]
+
 application/pdf=epdfview.desktop
 application/x-bittorrent=org.qbittorrent.qBittorrent.desktop
 application/x-extension-htm=firefox-developer-edition.desktop
@@ -6,6 +7,7 @@ application/x-extension-html=firefox-developer-edition.desktop
 application/x-extension-shtml=firefox-developer-edition.desktop
 application/x-extension-xht=firefox-developer-edition.desktop
 application/x-extension-xhtml=firefox-developer-edition.desktop
+application/x-iwork-keynote-sffkey=mousepad.desktop
 application/x-shellscript=mousepad.desktop
 application/xhtml+xml=firefox-developer-edition.desktop
 application/xml=mousepad.desktop
@@ -33,7 +35,9 @@ x-scheme-handler/https=firefox-developer-edition.desktop
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 x-scheme-handler/mailto=userapp-Thunderbird.desktop
 
+
 [Added Associations]
+
 application/pdf=epdfview.desktop;
 application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;
 application/x-extension-htm=firefox-developer-edition.desktop;
@@ -41,6 +45,7 @@ application/x-extension-html=firefox-developer-edition.desktop;
 application/x-extension-shtml=firefox-developer-edition.desktop;
 application/x-extension-xht=firefox-developer-edition.desktop;
 application/x-extension-xhtml=firefox-developer-edition.desktop;
+application/x-iwork-keynote-sffkey=mousepad.desktop;
 application/x-shellscript=mousepad.desktop;
 application/xhtml+xml=firefox-developer-edition.desktop;
 application/xml=mousepad.desktop;
