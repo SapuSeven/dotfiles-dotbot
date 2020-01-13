@@ -3,12 +3,14 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config']
+- clean:
+    ~/:
+    ~/.config:
 
 - link:
-    ~/.config/Kvantum: .config/Kvantum/
     ~/.config/gtk-3.0: .config/gtk-3.0/
     ~/.config/i3: .config/i3/
+    ~/.config/Kvantum: .config/Kvantum/
     ~/.config/nitrogen: .config/nitrogen/
     ~/.config/polybar: .config/polybar/
     ~/.config/qt5ct: .config/qt5ct/
@@ -22,16 +24,16 @@
     ~/.config/mimeapps.list: .config/mimeapps.list
 
     ~/.aliases: .aliases
-    ~/.bashrc: .bashrc
     ~/.bash_profile: .bash_profile
+    ~/.bashrc: .bashrc
     ~/.gtkrc-2.0: .gtkrc-2.0
+    ~/.nanorc: .nanorc
     ~/.xinitrc: .xinitrc
     ~/.Xresources: .Xresources
-    ~/.nanorc: .nanorc
     ~/.Xkbmap: .Xkbmap
 
     ~/.icons: .icons/
     ~/.local/share/fonts: .local/share/fonts/
     ~/.themes: .themes/
 
-    ~/Templates: Templates
+    ~/Templates:
