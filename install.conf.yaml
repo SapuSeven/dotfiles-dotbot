@@ -11,6 +11,7 @@
     ~/.config/i3: .config/i3/
     ~/.config/nitrogen: .config/nitrogen/
     ~/.config/polybar: .config/polybar/
+    ~/.config/qt5ct: .config/qt5ct/
     ~/.config/ranger: .config/ranger/
     ~/.config/rofi: .config/rofi/
     ~/.config/scripts: .config/scripts/
@@ -22,6 +23,7 @@
     ~/.aliases: .aliases
     ~/.bashrc: .bashrc
     ~/.bash_profile: .bash_profile
+    ~/.gtkrc-2.0: .gtkrc-2.0
     ~/.xinitrc: .xinitrc
     ~/.Xresources: .Xresources
     ~/.nanorc: .nanorc
