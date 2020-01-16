@@ -1,4 +1,5 @@
 alias ulocate="sudo updatedb && locate"
+alias rmv="trash"
 alias ll="ls -l"
 alias la="ls -lA"
 alias cp="cp -i" # confirm before overwriting something
@@ -10,3 +11,4 @@ alias xclip="xclip -selection c"
 alias pac="sudo pacman --noconfirm"
 alias tri="trizen --noedit --noconfirm"
 alias ports="lsof -i -P -n | grep LISTEN"
+alias atom="ATOM_HOME=./.atom atom"
