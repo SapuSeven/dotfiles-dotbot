@@ -1,0 +1,53 @@
+[global]
+monitor = 0
+follow = mouse
+geometry = "400x60-20+48"
+indicate_hidden = yes
+shrink = no
+separator_height = 0
+padding = 16
+horizontal_padding = 16
+frame_width = 2
+sort = no
+idle_threshold = 120
+font = rissole 8
+line_height = 4
+markup = full
+format = <b>%s</b>\n%b
+alignment = left
+show_age_threshold = 60
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = no
+icon_position = right
+sticky_history = yes
+history_length = 20
+browser = /usr/bin/xdg-open
+always_run_script = true
+title = Dunst
+class = Dunst
+
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+less
+
+[urgency_low]
+timeout = 4
+background = "#222222"
+foreground = "#dfdfdf"
+frame_color = "#555555"
+
+[urgency_normal]
+timeout = 8
+background = "#222222"
+foreground = "#dfdfdf"
+frame_color = "#ffb52a"
+
+[urgency_critical]
+timeout = 0
+background = "#bd2c40"
+foreground = "#ffffff"
+frame_color = "#bd2c40"
