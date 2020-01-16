@@ -28,6 +28,7 @@ text/x-csrc=mousepad.desktop
 text/x-gcode=mousepad.desktop
 text/x-gradle=mousepad.desktop
 
+x-directory/normal=pcmanfm.desktop
 x-scheme-handler/chrome=firefox-developer-edition.desktop
 x-scheme-handler/ftp=firefox-developer-edition.desktop
 x-scheme-handler/http=firefox-developer-edition.desktop
