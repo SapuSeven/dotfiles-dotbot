@@ -3,7 +3,7 @@ alias rmv="trash"
 alias ll="ls -l"
 alias la="ls -lA"
 alias lh="ls -lh"
-alias cp="cp -i" # confirm before overwriting something
+alias cp="cp -ri" # confirm before overwriting something
 alias df="df -h" # human-readable sizes
 alias free="free -m" # show sizes in MB
 alias np="nano -w PKGBUILD"
@@ -12,4 +12,4 @@ alias xclip="xclip -selection c"
 alias pac="sudo pacman --noconfirm"
 alias tri="trizen --noedit --noconfirm"
 alias ports="lsof -i -P -n | grep LISTEN"
-alias atom="ATOM_HOME=./.atom atom"
+alias atom-edit='ATOM_HOME=$(pwd)/.atom atom'
