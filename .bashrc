@@ -140,7 +140,9 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # keyboard layout fix
 setxkbmap at nodeadkeys
 
-eval $(keychain --eval)
+if [ -z "$SSH_AUTH_SOCK" ]; then
+	eval $(ssh-agent -s)
+fi
 
 # Yakuake blur background fix
 if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake$' ]]; then
