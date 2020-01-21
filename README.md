@@ -1,5 +1,20 @@
 The dotfiles should work on any Arch-based system.
 
+## Used packages
+
+    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi
+    yay -S xcursor-breeze
+
+### Custom packages
+
+    sudo pacman -Syu i3lock-custom
+
+First you need to modify `/etc/pacman.conf` and add the following lines at the bottom:
+
+    [sapuseven]
+    SigLevel = Never
+    Server = https://repo.sapuseven.com/$arch
+
 # Automatic installation
 
 This will place all customized dotfiles inside `~/.dotfiles` and symlink accordingly.
