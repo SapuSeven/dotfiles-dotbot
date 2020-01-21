@@ -244,7 +244,7 @@ bindsym $mod+Ctrl+Shift+Left resize grow width 1 px or 1 ppt
 bindsym $mod+Tab exec --no-startup-id "~/.config/scripts/lock.sh"
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
-exec always --no-startup-id lxqt-policykit-agent &
+#exec always --no-startup-id lxqt-policykit-agent &
 exec_always --no-startup-id numlockx on
 
 #############################
