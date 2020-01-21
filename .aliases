@@ -2,6 +2,7 @@ alias ulocate="sudo updatedb && locate"
 alias rmv="trash"
 alias ll="ls -l"
 alias la="ls -lA"
+alias lh="ls -lh"
 alias cp="cp -i" # confirm before overwriting something
 alias df="df -h" # human-readable sizes
 alias free="free -m" # show sizes in MB
