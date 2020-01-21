@@ -43,7 +43,7 @@ padding-right = 2
 module-margin = 2
 separator = %{F#555}|%{F-}
 
-font-0 = fixed:size=10;4
+font-0 = Noto Sans:size=10;4
 font-1 = Symbols Nerd Font:style=Regular:size=12;4
 
 modules-left = i3
