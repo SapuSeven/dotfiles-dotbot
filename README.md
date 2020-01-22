@@ -2,12 +2,17 @@ The dotfiles should work on any Arch-based system.
 
 ## Used packages
 
-    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen
+    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc
     yay -S xcursor-breeze
 
 ### Custom packages
 
     sudo pacman -Syu i3lock-custom
+
+## Suggested packages
+
+- `okular` - PDF Viewer
+- `ark` - Archive Manager
 
 First you need to modify `/etc/pacman.conf` and add the following lines at the bottom:
 
