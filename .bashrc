@@ -119,7 +119,7 @@ ex ()
       *.tar.bz2)   tar xjf $1   ;;
       *.tar.gz)    tar xzf $1   ;;
       *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
+      *.rar)       unrar x $1   ;;
       *.gz)        gunzip $1    ;;
       *.tar)       tar xf $1    ;;
       *.tbz2)      tar xjf $1   ;;
@@ -140,8 +140,10 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # keyboard layout fix
 setxkbmap at nodeadkeys
 
-if [ -z "$SSH_AUTH_SOCK" ]; then
-	eval $(ssh-agent -s)
+if [[ ${EUID} != 0 ]] ; then
+	if [ -z "$SSH_AUTH_SOCK" ]; then
+		eval $(ssh-agent -s)
+	fi
 fi
 
 # Yakuake blur background fix
