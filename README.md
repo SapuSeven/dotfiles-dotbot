@@ -2,7 +2,7 @@ The dotfiles should work on any Arch-based system.
 
 ## Used packages
 
-    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc
+    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx
     yay -S xcursor-breeze
 
 ### Custom packages
