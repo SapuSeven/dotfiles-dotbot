@@ -9,7 +9,6 @@ alias free="free -m" # show sizes in MB
 alias np="nano -w PKGBUILD"
 alias more="less"
 alias xclip="xclip -selection c"
-alias pac="sudo pacman --noconfirm"
-alias tri="trizen --noedit --noconfirm"
 alias ports="lsof -i -P -n | grep LISTEN"
 alias atom-edit='ATOM_HOME=$(pwd)/.atom atom'
+alias y=yay
