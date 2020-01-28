@@ -41,6 +41,7 @@ for_window [class=".*"] title_format " %title"
 # Window-specific styles
 for_window [class="Nm-connection-editor"] floating enable
 for_window [title="win0"] floating enable
+for_window [instance="sun-awt-X11-XDialogPeer"] floating enable
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
