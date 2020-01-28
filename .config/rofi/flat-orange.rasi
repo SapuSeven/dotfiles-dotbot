@@ -1,5 +1,5 @@
 * {
-    font: "Noto Sans Mono Regular 10";
+    font: "DejaVu Sans Mono Regular 10";
 
     foreground:                  #DFDFDF;
     foreground-alt:              #000000;
