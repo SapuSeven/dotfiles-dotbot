@@ -27,7 +27,7 @@
     ~/.aliases: .aliases
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
-    ~/.gtkrc-2.0: .gtkrc-2.0
+    ~/.gtkrc-2.0.mine: .gtkrc-2.0
     ~/.nanorc: .nanorc
     ~/.xinitrc: .xinitrc
     ~/.Xresources: .Xresources
