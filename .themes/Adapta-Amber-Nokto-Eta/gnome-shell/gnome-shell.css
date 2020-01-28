@@ -3,7 +3,7 @@
 
 *:focus { transition-duration: 0s; }
 
-stage { font-size: 10pt; font-family: Noto Sans, Sans-Serif; color: #CFD8DC; }
+stage { font-size: 10pt; font-family: DejaVu Sans, Sans-Serif; color: #CFD8DC; }
 
 .button { border-color: transparent; color: rgba(207, 216, 220, 0.87); background-color: transparent; box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; padding: 5px 12px 6px; border-radius: 2px; border-width: 0; font-weight: 500; }
 
@@ -1187,7 +1187,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .screen-shield-clock { padding-bottom: 1.5em; color: #CFD8DC; text-align: center; }
 
-.screen-shield-clock-time { font-size: 84pt; font-family: Roboto, Noto Sans, Cantarell, Sans-Serif; font-weight: 300; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
+.screen-shield-clock-time { font-size: 84pt; font-family: Roboto, DejaVu Sans, Cantarell, Sans-Serif; font-weight: 300; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
 
 .screen-shield-clock-date { font-size: 13pt; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
 
@@ -1221,7 +1221,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #LookingGlassDialog .labels { spacing: 0; }
 
-#LookingGlassDialog .notebook-tab { font-size: 9pt; min-height: 30px; padding: 0 12px; color: rgba(207, 216, 220, 0.87); font-family: Noto Sans, Sans-Serif; font-weight: 700; transition-duration: 0.15s; }
+#LookingGlassDialog .notebook-tab { font-size: 9pt; min-height: 30px; padding: 0 12px; color: rgba(207, 216, 220, 0.87); font-family: DejaVu Sans, Sans-Serif; font-weight: 700; transition-duration: 0.15s; }
 
 #LookingGlassDialog .notebook-tab:hover { border-bottom-width: 0; border-color: transparent; background-color: rgba(0, 0, 0, 0.01); color: #CFD8DC; box-shadow: inset 0 -2px rgba(207, 216, 220, 0.2); text-shadow: none; transition-duration: 0.15s; }
 

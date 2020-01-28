@@ -15,7 +15,7 @@ exec --no-startup-id nitrogen --restore &
 for_window [instance="origin.exe"] floating enable
 
 # General settings
-font pango:Noto Sans 10
+font pango:DejaVu Sans 10
 floating_modifier $mod
 default_border pixel 2
 default_floating_border pixel 2
