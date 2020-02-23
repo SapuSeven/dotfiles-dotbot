@@ -16,7 +16,7 @@ XTerm*selectToClipboard: true
 
 *background:                      #222222
 *foreground:                      #e8e8e8
-*fading:                          8
+*fading:                          0
 *fadeColor:                       black
 *cursorColor:                     #ffc107
 *pointerColorBackground:          #222222

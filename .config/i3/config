@@ -3,10 +3,15 @@ set $mod Mod4
 # Set keyboard layout
 exec --no-startup-id setxkbmap at nodeadkeys
 
+# Autostart applications
+#exec --no-startup-id i3-msg 'workspace 4:Spotify; exec /usr/bin/spotify; move workspace to output secondary'
+
 # Multi monitor setup
-exec --no-startup-id xrandr --output DP-4 --mode 1920x1080 --rate 144 --primary --left-of DVI-D-0
-workspace 1 output DP-4
-workspace 2 output DVI-D-0
+exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144 --primary --left-of DP-3
+exec --no-startup-id xrandr --output DP-3 --mode 1280x1024 --rate 75.02
+
+workspace 1 output primary
+#workspace 2 output right
 
 # Setup background
 exec --no-startup-id nitrogen --restore &
@@ -42,6 +47,8 @@ for_window [class=".*"] title_format " %title"
 for_window [class="Nm-connection-editor"] floating enable
 for_window [title="win0"] floating enable
 for_window [instance="sun-awt-X11-XDialogPeer"] floating enable
+
+for_window [class="mpv"] border none
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -84,6 +91,8 @@ bindsym $mod+e exec pcmanfm
 bindsym $mod+f exec firefox-developer-edition
 bindsym $mod+w exec --no-startup-id "~/.config/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
 bindsym $mod+r exec --no-startup-id rofi-pass
+
+bindsym $mod+Ctrl+Tab exec --no-startup-id "mpv --loop --no-osc --no-input-default-bindings --cursor-autohide=no --panscan=1.0 ~/.config/wallpapers/FalconHeavyNightLaunch-Animation.mkv"
 
 # kill focused window
 bindsym $mod+q kill

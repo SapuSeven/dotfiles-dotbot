@@ -7,7 +7,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 FIELDS=SSID,SECURITY
 POSITION=0
-YOFF=27
+YOFF=28
 XOFF=0
 FONT="DejaVu Sans Mono 10"
 
