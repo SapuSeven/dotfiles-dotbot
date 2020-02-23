@@ -1,0 +1,6 @@
+display_on=1
+fx_list=blur
+
+locktext="%A, %d. %b %Y"
+keyhlcolor=ffc107ff
+ringwrongcolor=d23c3dff

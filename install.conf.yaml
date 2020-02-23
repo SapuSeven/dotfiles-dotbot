@@ -13,6 +13,7 @@
     ~/.config/gtk-3.0: .config/gtk-3.0/
     ~/.config/i3: .config/i3/
     ~/.config/Kvantum: .config/Kvantum/
+    ~/.config/multilock: .config/multilock/
     ~/.config/nitrogen: .config/nitrogen/
     ~/.config/polybar: .config/polybar/
     ~/.config/qt5ct: .config/qt5ct/
