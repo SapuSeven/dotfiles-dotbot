@@ -140,13 +140,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # keyboard layout fix
 setxkbmap at nodeadkeys
 
-if [[ ${EUID} != 0 ]] ; then
-	if [ -z "$SSH_AUTH_SOCK" ]; then
-		eval $(ssh-agent -s)
-	fi
-fi
-
-# Yakuake blur background fix
+# yakuake blur background fix
 if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake$' ]]; then
         for wid in $(xdotool search --pid $PPID); do
             xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
