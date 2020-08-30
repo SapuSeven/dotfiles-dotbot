@@ -2,7 +2,7 @@ The dotfiles should work on any Arch-based system.
 
 ## Used packages
 
-    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx
+    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx brightnessctl
     yay -S xcursor-breeze lightdm-webkit-theme-sequoia-git
 
 ### Custom packages
