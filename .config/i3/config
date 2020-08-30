@@ -7,8 +7,7 @@ exec --no-startup-id setxkbmap at nodeadkeys
 #exec --no-startup-id i3-msg 'workspace 4:Spotify; exec /usr/bin/spotify; move workspace to output secondary'
 
 # Multi monitor setup
-exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144 --primary --left-of DP-3
-exec --no-startup-id xrandr --output DP-3 --mode 1280x1024 --rate 75.02
+#exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144 --primary --left-of DP-3 --output DP-3 --mode 1280x1024 --rate 75.02
 
 workspace 1 output primary
 #workspace 2 output right
@@ -47,6 +46,8 @@ for_window [class=".*"] title_format " %title"
 for_window [class="Nm-connection-editor"] floating enable
 for_window [title="win0"] floating enable
 for_window [instance="sun-awt-X11-XDialogPeer"] floating enable
+for_window [title="Microsoft Teams Notification"] floating enable
+for_window [class="Toplevel"] floating enable
 
 for_window [class="mpv"] border none
 
@@ -205,6 +206,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+bindcode $mod+49 scratchpad show
+bindcode $mod+Shift+49 move scratchpad
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -253,8 +257,8 @@ bindsym $mod+Ctrl+Shift+Left resize grow width 1 px or 1 ppt
 
 bindsym $mod+Tab exec --no-startup-id "~/.config/scripts/lock.sh"
 
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
-#exec always --no-startup-id lxqt-policykit-agent &
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+#exec always --no-startup-id lxqt-policykit-agent
 exec_always --no-startup-id numlockx on
 
 #############################
