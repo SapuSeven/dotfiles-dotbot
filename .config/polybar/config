@@ -47,8 +47,8 @@ font-0 = Noto Sans:size=10;4
 font-1 = Symbols Nerd Font:style=Regular:size=12;4
 
 modules-left = i3
-;modules-center = mpd
-modules-right = mpd volume wlan eth memory cpu battery temperature date powermenu
+;modules-center = date mpd
+modules-right = github volume wlan eth memory cpu battery temperature date powermenu
 
 tray-position = center
 tray-padding = 2
@@ -152,6 +152,19 @@ icon-next = 怜
 
 label-song-maxlen = 100
 label-song-ellipsis = true
+
+[module/github]
+type = internal/github
+
+; Accessing an access token stored in file
+token = ${file:/home/paul/.config/polybar/github-access-token}
+user = SapuSeven
+empty-notifications = false
+interval = 10
+api-url = https://api.github.com/
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+label = %{A1:xdg-open https\://github.com/notifications:}%notifications%%{A}
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -284,6 +297,7 @@ animation-charging-foreground = ${colors.primary}
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp2_input
 base-temperature = 20
 warn-temperature = 90
 
