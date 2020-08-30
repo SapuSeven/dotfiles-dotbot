@@ -21,6 +21,7 @@
     ~/.config/rofi-pass: .config/rofi-pass/
     ~/.config/rofi: .config/rofi/
     ~/.config/scripts: .config/scripts/
+    ~/.config/sxhkd: .config/sxhkd/
     ~/.config/twmn: .config/twmn/
     ~/.config/wallpapers: .config/wallpapers/
 

@@ -1,0 +1,27 @@
+alt+F1
+	paplay -d vsink_fx ~/Music/sounds/1.wav
+
+alt+F2
+	paplay -d vsink_fx ~/Music/sounds/2.wav
+
+alt+F3
+	paplay -d vsink_fx ~/Music/sounds/3.wav
+
+alt+F4
+	paplay -d vsink_fx ~/Music/sounds/4.wav
+
+alt+F5
+	paplay -d vsink_fx ~/Music/sounds/5.wav
+
+alt+F6
+	paplay -d vsink_fx ~/Music/sounds/6.wav
+
+alt+F7
+	paplay -d vsink_fx ~/Music/sounds/7.wav
+
+alt+F8
+	paplay -d vsink_fx ~/Music/sounds/8.wav
+
+alt+F9
+	killall paplay
+

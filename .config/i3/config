@@ -260,6 +260,8 @@ bindsym $mod+Tab exec --no-startup-id "~/.config/scripts/lock.sh"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec always --no-startup-id lxqt-policykit-agent
 exec_always --no-startup-id numlockx on
+exec --no-startup-id sxhkd
+exec --no-startup-id clipster -d
 
 #############################
 ### settings for i3-gaps: ###
