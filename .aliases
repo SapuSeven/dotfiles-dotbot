@@ -1,6 +1,6 @@
 alias ulocate="sudo updatedb && locate"
 alias rmv="trash"
-alias ll="ls -l"
+alias l="ls -l"
 alias la="ls -lA"
 alias lh="ls -lh"
 alias cp="cp -ri" # confirm before overwriting something
@@ -12,3 +12,8 @@ alias xclip="xclip -selection c"
 alias ports="lsof -i -P -n | grep LISTEN"
 alias atom-edit='ATOM_HOME=$(pwd)/.atom atom'
 alias y=yay
+alias ipv4="curl -s ipv4.icanhazip.com | tr -d '\n' | xclip"
+alias ipv6="curl -s ipv6.icanhazip.com | tr -d '\n' | xclip"
+alias cpip=ipv4
+alias psgrep="ps -aux | grep"
+alias k="khal calendar"

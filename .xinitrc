@@ -7,6 +7,7 @@
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 userkbmap=$HOME/.Xkbmap
+userbindkeys=$HOME/.xbindkeysrc
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
@@ -32,6 +33,10 @@ fi
 
 if [ -f "$userkbmap" ]; then
     setxkbmap "$userkbmap"
+fi
+
+if [ -f "$userbindkeys" ]; then
+    xbindkeys
 fi
 
 # start some nice programs
@@ -70,3 +75,5 @@ get_session(){
 }
 
 exec $(get_session)
+
+pgrep sxhkd || sxhkd &
