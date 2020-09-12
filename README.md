@@ -2,10 +2,17 @@ The dotfiles should work on any Arch-based system.
 
 ## Used packages
 
-    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx sxhkd clipster
-    yay -S xcursor-breeze
+    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx brightnessctl sxhkd clipster
+    yay -S xcursor-breeze lightdm-webkit-theme-sequoia-git
 
 ### Custom packages
+
+First you need to modify `/etc/pacman.conf` and add the following lines at the bottom:
+
+    [sapuseven]
+    SigLevel = Never
+    Server = https://repo.sapuseven.com/$arch
+
 
     sudo pacman -Syu i3lock-custom
 
@@ -13,12 +20,6 @@ The dotfiles should work on any Arch-based system.
 
 - `okular` - PDF Viewer
 - `ark` - Archive Manager
-
-First you need to modify `/etc/pacman.conf` and add the following lines at the bottom:
-
-    [sapuseven]
-    SigLevel = Never
-    Server = https://repo.sapuseven.com/$arch
 
 # Automatic installation
 
