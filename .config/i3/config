@@ -12,9 +12,6 @@ exec --no-startup-id setxkbmap at nodeadkeys
 workspace 1 output primary
 #workspace 2 output right
 
-# Setup background
-exec --no-startup-id nitrogen --restore &
-
 # Origin floating window fix
 for_window [instance="origin.exe"] floating enable
 
@@ -262,7 +259,6 @@ bindsym $mod+Tab exec --no-startup-id "~/.config/scripts/lock.sh"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec always --no-startup-id lxqt-policykit-agent
 exec_always --no-startup-id numlockx on
-exec --no-startup-id sxhkd
 exec --no-startup-id clipster -d
 
 #############################
