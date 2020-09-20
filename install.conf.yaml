@@ -5,40 +5,44 @@
 
 - clean:
     ~/:
-    ~/.config:
+    ~/config:
+        recursive: true
 
 - link:
-    ~/.config/dunst: .config/dunst/
-    ~/.config/fontconfig: .config/fontconfig/
-    ~/.config/gtk-3.0: .config/gtk-3.0/
-    ~/.config/i3: .config/i3/
-    ~/.config/Kvantum: .config/Kvantum/
-    ~/.config/multilock: .config/multilock/
-    ~/.config/nitrogen: .config/nitrogen/
-    ~/.config/polybar: .config/polybar/
-    ~/.config/qt5ct: .config/qt5ct/
-    ~/.config/ranger: .config/ranger/
-    ~/.config/rofi-pass: .config/rofi-pass/
-    ~/.config/rofi: .config/rofi/
-    ~/.config/scripts: .config/scripts/
-    ~/.config/sxhkd: .config/sxhkd/
-    ~/.config/twmn: .config/twmn/
-    ~/.config/wallpapers: .config/wallpapers/
+    ~/.config/dunst: config/dunst/
+    ~/.config/fontconfig: config/fontconfig/
+    ~/.config/gtk-3.0: config/gtk-3.0/
+    ~/.config/i3: config/i3/
+    ~/.config/Kvantum: config/Kvantum/
+    ~/.config/multilock: config/multilock/
+    ~/.config/nitrogen: config/nitrogen/
+    ~/.config/polybar: config/polybar/
+    ~/.config/qt5ct: config/qt5ct/
+    ~/.config/ranger: config/ranger/
+    ~/.config/rofi-pass: config/rofi-pass/
+    ~/.config/rofi: config/rofi/
+    ~/.config/scripts: config/scripts/
+    ~/.config/sxhkd: config/sxhkd/
+    ~/.config/twmn: config/twmn/
+    ~/.config/wallpapers: config/wallpapers/
 
-    ~/.config/mimeapps.list: .config/mimeapps.list
+    ~/.config/mimeapps.list: config/mimeapps.list
 
-    ~/.aliases: .aliases
-    ~/.bash_profile: .bash_profile
-    ~/.bashrc: .bashrc
-    ~/.gtkrc-2.0.mine: .gtkrc-2.0
-    ~/.nanorc: .nanorc
-    ~/.xinitrc: .xinitrc
-    ~/.Xresources: .Xresources
-    ~/.Xkbmap: .Xkbmap
+    ~/.aliases:
+    ~/.bash_profile:
+        force: true
+    ~/.bashrc:
+        force: true
+    ~/.gnupg/gpg.conf: gnupg/gpg.conf
+    ~/.gtkrc-2.0:
+    ~/.nanorc:
+    ~/.profile:
+    ~/.xinitrc:
+    ~/.Xresources:
+    ~/.Xkbmap:
 
-    ~/.icons: .icons/
-    ~/.local/share/fonts: .local/share/fonts/
-    ~/.profile: .profile
-    ~/.themes: .themes/
+    ~/.icons:
+    ~/.local/share/fonts: local/share/fonts
+    ~/.themes:
 
     ~/Templates:
