@@ -1,7 +1,7 @@
 - defaults:
     link:
-      create: true
-      relink: true
+        create: true
+        relink: true
 
 - clean:
     ~/:
@@ -46,3 +46,6 @@
     ~/.themes:
 
     ~/Templates:
+
+- shell:
+    - [sudo sed -i -e 's/#Color/Color/' -e 's/#TotalDownload/TotalDownload/' /etc/pacman.conf, Configuring pacman]
