@@ -1,0 +1,10 @@
+[Unit]
+Description=OpenRGB Server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/openrgb --server
+
+[Install]
+WantedBy=default.target
+

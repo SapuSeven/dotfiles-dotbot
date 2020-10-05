@@ -23,10 +23,13 @@
     ~/.config/rofi: config/rofi/
     ~/.config/scripts: config/scripts/
     ~/.config/sxhkd: config/sxhkd/
+    ~/.config/systemd: config/systemd/
     ~/.config/twmn: config/twmn/
     ~/.config/wallpapers: config/wallpapers/
 
-    ~/.config/mimeapps.list: config/mimeapps.list
+    ~/.config/mimeapps.list:
+        path: config/mimeapps.list
+        force: true
 
     ~/.aliases:
     ~/.bash_profile:
@@ -36,6 +39,7 @@
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.gtkrc-2.0:
     ~/.nanorc:
+    ~/.pam_environment:
     ~/.profile:
     ~/.xinitrc:
     ~/.Xresources:
@@ -49,3 +53,4 @@
 
 - shell:
     - [sudo sed -i -e 's/#Color/Color/' -e 's/#TotalDownload/TotalDownload/' /etc/pacman.conf, Configuring pacman]
+    - [systemctl enable --user ssh-agent, Enabling ssh-agent service]
