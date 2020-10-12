@@ -24,4 +24,17 @@ if [ -d ~/.themes/$THEME/wallpapers/ ]; then
 fi
 
 
+# GTK theme
+#sed -i "s/\(^gtk-theme-name=\).*/\1$THEME/"  ~/.config/gtk-3.0/settings.ini
+#sed -i "s/\(^gtk-theme-name=\).*/\1$THEME/"  ~/.gtkrc-2.0
+#gsettings set org.gnome.desktop.interface gtk-theme "$THEME"
+
+
+# symlink current theme
+ln -fnsd ~/.themes/$THEME ~/.themes/current
+
+
+# reload
 i3-msg reload
+polybar-msg cmd restart
+
