@@ -53,6 +53,5 @@ start() {
 
 start sxhkd
 start udiskie
-start nitrogen --restore
 
 exec i3

@@ -16,16 +16,11 @@
 ;
 ;==========================================================
 
-[colors]
-background = #222
-background-alt = #444
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+include-file = ~/.themes/current/polybar.colors
 
 [bar/main]
+enable-ipc = true
+
 monitor = ${env:MONITOR:}
 width = 100%
 height = 28

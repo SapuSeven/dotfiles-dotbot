@@ -47,6 +47,7 @@
 
     ~/.icons:
     ~/.local/share/fonts: local/share/fonts
+    ~/.local/share/themes: local/share/themes
     ~/.themes:
 
     ~/Templates:
@@ -54,3 +55,4 @@
 - shell:
     - [sudo sed -i -e 's/#Color/Color/' -e 's/#TotalDownload/TotalDownload/' /etc/pacman.conf, Configuring pacman]
     - [systemctl enable --user ssh-agent, Enabling ssh-agent service]
+    - [multilockscreen -u /home/paul/.config/wallpapers/FalconHeavyNightLaunch-Cleaned.jpg, Setting up multilockscreen]
