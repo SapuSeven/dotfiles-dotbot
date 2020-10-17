@@ -40,10 +40,11 @@
     ~/.gtkrc-2.0:
     ~/.nanorc:
     ~/.pam_environment:
-    ~/.profile:
     ~/.xinitrc:
     ~/.Xresources:
     ~/.Xkbmap:
+    ~/.zprofile:
+    ~/.zshrc:
 
     ~/.icons:
     ~/.local/share/fonts: local/share/fonts
