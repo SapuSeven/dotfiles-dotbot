@@ -25,6 +25,7 @@
     ~/.config/sxhkd: config/sxhkd/
     ~/.config/systemd: config/systemd/
     ~/.config/twmn: config/twmn/
+    ~/.config/vis: config/vis/
     ~/.config/wallpapers: config/wallpapers/
 
     ~/.config/mimeapps.list:
