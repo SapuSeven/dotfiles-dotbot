@@ -15,5 +15,5 @@ alias ipv4="curl -s ipv4.icanhazip.com | tr -d '\n' | xclip"
 alias ipv6="curl -s ipv6.icanhazip.com | tr -d '\n' | xclip"
 alias cpip=ipv4
 alias psgrep="ps -aux | grep"
-alias k="git rev-parse --is-inside-work-tree &> /dev/null && k -h $@ || k -h --no-vcs $@"
+#alias k="git rev-parse --is-inside-work-tree &> /dev/null && k -h $@ || k -h --no-vcs $@"
 alias ka="k -A"
