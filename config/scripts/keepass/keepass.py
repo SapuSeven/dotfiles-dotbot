@@ -1,4 +1,8 @@
-from pykeepass_cache_git.pykeepass_cache import PyKeePass
+try:
+    from pykeepass_cache.pykeepass_cache import PyKeePass
+except ImportError:
+    from pykeepass_cache_git.pykeepass_cache import PyKeePass
+
 from pyotp import TOTP
 from configparser import ConfigParser
 import sys
@@ -26,7 +30,8 @@ def keepass_info():
         return {
             "user": obj.username,
             "pass": obj.password,
-            "otp": TOTP(obj.custom_properties["OTP"]).now() if "OTP" in obj.custom_properties else ""
+            "otp": TOTP(obj.custom_properties["OTP"]).now() if "OTP" in obj.custom_properties else "",
+            "custom": obj.get_custom_property(sys.argv[4]) if len(sys.argv) >= 5 else "\n".join(obj.custom_properties.keys())
         }.get(sys.argv[3], "")
     else:
         return obj

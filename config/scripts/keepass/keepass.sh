@@ -2,7 +2,7 @@
 cd "$(dirname "$0")" || exit
 
 copy() {
-  python keepass.py info "$selection" "$1" | xclip -selection c
+  python keepass.py info "$selection" "$@" | xclip -selection c
 }
 
 autotype() {
@@ -17,12 +17,6 @@ autotype() {
   xdotool key Return
 }
 
-options=(
-  "Copy Username"
-  "Copy Password"
-  "Copy OTP Code"
-  "Perform Auto-Type"
-)
 
 selection=$(python keepass.py list | rofi -dmenu -i -p "Search")
 
@@ -30,7 +24,16 @@ if [[ ${selection} == "" ]]; then
   exit
 fi
 
-action=$(printf '%s\n' "${options[@]}" | rofi -dmenu -p "$selection")
+options=$(cat << END
+Copy Username
+Copy Password
+Copy OTP Code
+$(echo -e "$(python keepass.py info "$selection" custom)" | while read line; do echo "Copy ${line}"; done)
+Perform Auto-Type
+END
+)
+
+action=$(echo -e "$options" | rofi -dmenu -p "$selection")
 
 if [[ ${action} == "Copy Username" ]]; then
   copy user
@@ -40,8 +43,8 @@ elif [[ ${action} == "Copy OTP Code" ]]; then
   copy otp
 elif [[ ${action} == "Perform Auto-Type" ]]; then
   autotype
+elif [[ ${action} == "Copy "* ]]; then
+  copy custom ${action/#Copy /}
 elif [[ ${action} == "" ]]; then
   exit
 fi
-
-#python keepass.py info "$selection"
