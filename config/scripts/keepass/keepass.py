@@ -30,11 +30,26 @@ def keepass_info():
         return {
             "user": obj.username,
             "pass": obj.password,
-            "otp": TOTP(obj.custom_properties["OTP"]).now() if "OTP" in obj.custom_properties else "",
-            "custom": obj.get_custom_property(sys.argv[4]) if len(sys.argv) >= 5 else "\n".join(obj.custom_properties.keys())
+            "otp": keepass_get_otp(obj),
+            "custom": keepass_get_custom(obj, sys.argv[4]) if len(sys.argv) >= 5 else keepass_get_custom(obj)
         }.get(sys.argv[3], "")
     else:
         return obj
+
+
+def keepass_get_otp(obj):
+    if "OTP" in obj.custom_properties:
+        return TOTP(obj.custom_properties["OTP"]).now()
+    else:
+        print("No OTP secret available")
+        return ""
+
+
+def keepass_get_custom(obj, key=None):
+    if key:
+        return obj.custom_properties[key]
+    else:
+        return "\n".join(filter(lambda s : s != "OTP", obj.custom_properties.keys()))
 
 
 def keepass_error():
