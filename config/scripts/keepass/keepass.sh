@@ -44,7 +44,7 @@ elif [[ ${action} == "Copy OTP Code" ]]; then
 elif [[ ${action} == "Perform Auto-Type" ]]; then
   autotype
 elif [[ ${action} == "Copy "* ]]; then
-  copy custom ${action/#Copy /}
+  copy custom "${action/#Copy /}"
 elif [[ ${action} == "" ]]; then
   exit
 fi
