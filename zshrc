@@ -115,16 +115,19 @@ ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=cyan,bold'
 
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238#issuecomment-389324292
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
   zle -N self-insert url-quote-magic
 }
-
 pastefinish() {
   zle -N self-insert $OLD_SELF_INSERT
 }
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
+
+# https://github.com/zsh-users/zsh-autosuggestions/issues/351#issuecomment-515415202
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste accept-line)
 
 # Fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
