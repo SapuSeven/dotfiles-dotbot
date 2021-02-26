@@ -82,7 +82,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+e exec pcmanfm
 bindsym $mod+f exec firefox-developer-edition
 bindsym $mod+w exec --no-startup-id "~/.config/scripts/rofi-wifi-menu/rofi-wifi-menu.sh center"
-bindsym $mod+r exec --no-startup-id rofi-pass
+#bindsym $mod+r exec --no-startup-id rofi-pass
 bindsym $mod+b exec --no-startup-id rofi-bluetooth
 bindsym $mod+c exec --no-startup-id "~/.config/scripts/keepass/keepass.sh"
 bindsym $mod+Shift+v exec --no-startup-id "~/.config/scripts/clipboard-history.sh"
@@ -169,6 +169,9 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# Custom Workspaces
+set $wsThunderbird "Mail"
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -180,6 +183,8 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+
+bindsym $mod+r workspace $wsThunderbird
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
