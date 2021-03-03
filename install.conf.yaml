@@ -27,9 +27,8 @@
     ~/.config/vis: config/vis/
     ~/.config/wallpapers: config/wallpapers/
 
-    ~/.config/mimeapps.list:
-        path: config/mimeapps.list
-        force: true
+    ~/.config/mimeapps.list: config/mimeapps.list
+    ~/.config/user-dirs.dirs: config/user-dirs.dirs
 
     ~/.aliases:
     ~/.bash_profile:
