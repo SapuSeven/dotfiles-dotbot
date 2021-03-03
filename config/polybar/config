@@ -297,7 +297,7 @@ animation-charging-foreground = ${colors.primary}
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-hwmon-path = /sys/class/hwmon/hwmon0/temp2_input
+hwmon-path = /sys/class/hwmon/hwmon1/temp1_input
 base-temperature = 20
 warn-temperature = 90
 
