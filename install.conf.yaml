@@ -50,12 +50,10 @@
     ~/.local/share/fonts: local/share/fonts
     ~/.themes:
 
-    ~/Templates:
-
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [sudo sed -E -i -e 's/#(Color)/\1/' -e 's/#(TotalDownload)/\1/' /etc/pacman.conf, Configuring pacman]
     - [sudo sed -E -i -e 's/#(HandlePowerKey=).*/\1ignore/' -e 's/#(HandleLidSwitch=).*/\1suspend/' -e 's/#(HandleLidSwitchExternalPower=).*/\1ignore/' /etc/systemd/logind.conf, Configuring power options]
     - [systemctl enable --user ssh-agent, Enabling ssh-agent service]
-    - [multilockscreen -u /home/paul/.config/wallpapers/FalconHeavyNightLaunch-Cleaned.jpg, Setting up multilockscreen]
+#    - [multilockscreen -u /home/paul/.config/wallpapers/FalconHeavyNightLaunch-Cleaned.jpg, Setting up multilockscreen]
     - [sudo chsh -s /bin/zsh $USER, Changing shell to zsh]
