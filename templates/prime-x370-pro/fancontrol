@@ -1,0 +1,16 @@
+# hwmon2/temp1 = CPU Temp
+# hwmon2/temp2 = Mainboard Temp
+
+# hwmon2/pwm1 = CPU
+# hwmon2/pwm2 = Chassis Front
+# hwmon2/pwm3 = Chassis Back
+
+INTERVAL=10
+DEVPATH=hwmon0=devices/pci0000:00/0000:00:01.1/0000:01:00.0 hwmon2=devices/platform/it87.656
+DEVNAME=hwmon0=nvme hwmon2=it8665
+FCTEMPS=hwmon2/pwm3=hwmon2/temp1_input hwmon2/pwm2=hwmon2/temp2_input hwmon2/pwm1=hwmon2/temp2_input
+FCFANS=hwmon2/pwm3=hwmon2/fan3_input hwmon2/pwm2=hwmon2/fan2_input hwmon2/pwm1=hwmon2/fan1_input
+MINTEMP=hwmon2/pwm1=20 hwmon2/pwm2=20 hwmon2/pwm3=20
+MAXTEMP=hwmon2/pwm1=50 hwmon2/pwm2=50 hwmon2/pwm3=50
+MINSTART=hwmon2/pwm1=150 hwmon2/pwm2=120 hwmon2/pwm3=120
+MINSTOP=hwmon2/pwm1=0 hwmon2/pwm2=40 hwmon2/pwm3=40

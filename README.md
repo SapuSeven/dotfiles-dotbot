@@ -89,3 +89,22 @@ To solve this, create the file `/usr/share/dbus-1/system.d/org.mpris.MediaPlayer
 ```
 
 Mopidy has to be restarted for the changes to take effect.
+
+
+# System Configuration Templates
+
+The files located in `templates` are intended to be used for system-specific configuration. Those vary depending on the system configuration and thus have to be installed manually.
+
+## Mainboard: Asus Prime X370-Pro (`templates/prime-x370-pro/`)
+
+### `x370-pro.conf`
+
+Copy to `/etc/modules-load.d/` to load the `it87` kernel module at boot. This is required for fan control.
+
+### `fancontrol`
+
+Copy to `/etc/`. Verify the correct hwmon paths or reconfigure using `pwmconfig`.
+
+### `ASUS-PRIME-X370-PRO`
+
+Copy to `/etc/sensors.d/`. This provides proper labels and calculations for `lm_sensors`.
