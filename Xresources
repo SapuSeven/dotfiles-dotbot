@@ -77,6 +77,9 @@ URxvt*cursorBlink:                true
 URxvt*background:                 black
 URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
+URxvt*scrollTtyOutput:            false
+URxvt*scrollWithBuffer:           true
+URxvt*scrollTtyKeypress:          true
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
 ! URxvt*inheritPixmap:            true
