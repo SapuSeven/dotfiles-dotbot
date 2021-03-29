@@ -95,7 +95,7 @@ Mopidy has to be restarted for the changes to take effect.
 
 The files located in `templates` are intended to be used for system-specific configuration. Those vary depending on the system configuration and thus have to be installed manually.
 
-## Shared Templates (`templates/shared`)
+## Shared Templates (`templates/shared/`)
 
 These are not system-specific and may be useful for any system configuration
 
