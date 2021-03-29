@@ -1,7 +1,7 @@
 #!/bin/bash
 
-rofi_command="rofi -width 200 -lines 5 -hide-scrollbar -fixed-num-lines"
+rofi_command="rofi -width 200 -lines 6 -hide-scrollbar -fixed-num-lines"
 
-options=$'suspend\nhibernate\nlogout\nreboot\nshutdown'
+options=$'suspend\nhibernate\nlock\nlogout\nreboot\nshutdown'
 
-eval i3exit $(echo "$options" | $rofi_command -dmenu -p "")
+eval ~/.config/scripts/i3exit.sh $(echo "$options" | $rofi_command -dmenu -p "")

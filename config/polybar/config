@@ -330,17 +330,17 @@ label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = "Lock "
-menu-0-0-exec = ~/.config/scripts/lock.sh
+menu-0-0-exec = ~/.config/scripts/i3exit.sh lock
 menu-0-1 = Logout
-menu-0-1-exec = i3exit logout
+menu-0-1-exec = ~/.config/scripts/i3exit.sh logout
 menu-0-2 = Suspend
-menu-0-2-exec = i3exit suspend
+menu-0-2-exec = ~/.config/scripts/i3exit.sh suspend
 menu-0-3 = Hibernate
-menu-0-3-exec = i3exit hibernate
+menu-0-3-exec = ~/.config/scripts/i3exit.sh hibernate
 menu-0-4 = Reboot
-menu-0-4-exec = i3exit reboot
+menu-0-4-exec = ~/.config/scripts/i3exit.sh reboot
 menu-0-5 = Shutdown
-menu-0-5-exec = i3exit shutdown
+menu-0-5-exec = ~/.config/scripts/i3exit.sh shutdown
 
 [settings]
 screenchange-reload = true
