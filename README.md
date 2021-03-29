@@ -95,6 +95,21 @@ Mopidy has to be restarted for the changes to take effect.
 
 The files located in `templates` are intended to be used for system-specific configuration. Those vary depending on the system configuration and thus have to be installed manually.
 
+## Shared Templates (`templates/shared`)
+
+These are not system-specific and may be useful for any system configuration
+
+### `fancontrol-resume.service`
+
+Copy to `/etc/systemd/system/` to restart fancontrol after waking up from sleep/suspend.
+
+Then reload systemd and enable the service:
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable fancontrol-resume.service
+```
+
 ## Mainboard: Asus Prime X370-Pro (`templates/prime-x370-pro/`)
 
 ### `x370-pro.conf`
