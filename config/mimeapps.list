@@ -1,62 +1,18 @@
 [Default Applications]
 
-application/pdf=epdfview.desktop
-application/x-bittorrent=org.qbittorrent.qBittorrent.desktop
-application/x-extension-htm=firefox-developer-edition.desktop
-application/x-extension-html=firefox-developer-edition.desktop
-application/x-extension-shtml=firefox-developer-edition.desktop
-application/x-extension-xht=firefox-developer-edition.desktop
-application/x-extension-xhtml=firefox-developer-edition.desktop
-application/x-iwork-keynote-sffkey=mousepad.desktop
-application/x-shellscript=mousepad.desktop
-application/xhtml+xml=firefox-developer-edition.desktop
-application/xml=mousepad.desktop
-
-image/jpeg=viewnior.desktop;gpicview.desktop;
-image/png=viewnior.desktop;gpicview.desktop;
-
-inode/directory=pcmanfm.desktop
-
-message/rfc822=userapp-Thunderbird.desktop
-
-model/stl=cura.desktop
-
-text/html=firefox-developer-edition.desktop
-text/plain=mousepad.desktop
-text/x-chdr=mousepad.desktop
-text/x-csrc=mousepad.desktop
-text/x-gcode=mousepad.desktop
-text/x-gradle=mousepad.desktop
-
-x-directory/normal=pcmanfm.desktop
-x-scheme-handler/chrome=firefox-developer-edition.desktop
-x-scheme-handler/ftp=firefox-developer-edition.desktop
-x-scheme-handler/http=firefox-developer-edition.desktop
-x-scheme-handler/https=firefox-developer-edition.desktop
-x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
-x-scheme-handler/mailto=userapp-Thunderbird.desktop
-
-
-[Added Associations]
-
-application/pdf=epdfview.desktop;
+application/pdf=org.gnome.Evince.desktop
 application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;
 application/x-extension-htm=firefox-developer-edition.desktop;
 application/x-extension-html=firefox-developer-edition.desktop;
 application/x-extension-shtml=firefox-developer-edition.desktop;
 application/x-extension-xht=firefox-developer-edition.desktop;
 application/x-extension-xhtml=firefox-developer-edition.desktop;
-application/x-iwork-keynote-sffkey=mousepad.desktop;
-application/x-shellscript=mousepad.desktop;
 application/xhtml+xml=firefox-developer-edition.desktop;
 application/xml=mousepad.desktop;
 
-image/jpeg=viewnior.desktop;gpicview.desktop;
-image/png=viewnior.desktop;gpicview.desktop;
-
 message/rfc822=userapp-Thunderbird.desktop;
 
-model/stl=cura.desktop;
+model/stl=PrusaSlicer.desktop;
 
 text/html=firefox-developer-edition.desktop;
 text/plain=mousepad.desktop;
@@ -64,6 +20,9 @@ text/x-chdr=mousepad.desktop;
 text/x-csrc=mousepad.desktop;
 text/x-gcode=mousepad.desktop;
 text/x-gradle=mousepad.desktop;
+
+x-directory/normal=pcmanfm.desktop
+inode/directory=pcmanfm.desktop
 
 x-scheme-handler/chrome=firefox-developer-edition.desktop;
 x-scheme-handler/ftp=firefox-developer-edition.desktop;
