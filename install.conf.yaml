@@ -59,3 +59,4 @@
     - [systemctl enable --user ssh-agent, Enabling ssh-agent service]
 #    - [multilockscreen -u /home/paul/.config/wallpapers/FalconHeavyNightLaunch-Cleaned.jpg, Setting up multilockscreen]
     - [sudo chsh -s /bin/zsh $USER, Changing shell to zsh]
+    - [~/.config/i3/generate-config.sh, Generating i3 config]
