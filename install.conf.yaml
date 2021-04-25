@@ -60,3 +60,4 @@
 #    - [multilockscreen -u /home/paul/.config/wallpapers/FalconHeavyNightLaunch-Cleaned.jpg, Setting up multilockscreen]
     - [sudo chsh -s /bin/zsh $USER, Changing shell to zsh]
     - [~/.config/i3/generate-config.sh, Generating i3 config]
+    - [python -m pip install ~/.config/scripts/keepass-dmenu, Installing keepass-dmenu]

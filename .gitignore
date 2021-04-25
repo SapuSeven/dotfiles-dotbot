@@ -1,5 +1,6 @@
 config/gtk-3.0/bookmarks
 config/polybar/github-access-token
+config/keepass-dmenu.conf
 config/i3/config
 local/share/fonts/.uuid
 themes/current
