@@ -37,9 +37,9 @@
     ~/.oh-my-zsh:
     ~/.ssh/README.md: ssh/README.md
     ~/.xinitrc:
+    ~/.Xkbmap:
     ~/.xprofile:
     ~/.Xresources:
-    ~/.Xkbmap:
     ~/.zshenv:
     ~/.zprofile:
     ~/.zshrc:

@@ -1,2 +1,3 @@
 #!/bin/sh
-[[ -f ~/.zshenv ]] && source ~/.zshenv
+[ -f ~/.zshenv ] && source ~/.zshenv
+[ -f ~/.zprofile ] && source ~/.zprofile
