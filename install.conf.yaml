@@ -35,7 +35,6 @@
     ~/.gtkrc-2.0:
     ~/.nanorc:
     ~/.oh-my-zsh:
-    ~/.pam_environment:
     ~/.ssh/README.md: ssh/README.md
     ~/.xinitrc:
     ~/.xprofile:
