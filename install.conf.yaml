@@ -20,7 +20,6 @@
     ~/.config/ranger: config/ranger/
     ~/.config/rofi-pass: config/rofi-pass/
     ~/.config/rofi: config/rofi/
-    ~/.config/scripts: config/scripts/
     ~/.config/sxhkd: config/sxhkd/
     ~/.config/systemd: config/systemd/
     ~/.config/twmn: config/twmn/
@@ -47,6 +46,7 @@
 
     ~/.icons:
     ~/.local/share/fonts: local/share/fonts
+    ~/.scripts:
     ~/.themes:
 
 - shell:
@@ -57,4 +57,4 @@
 #    - [multilockscreen -u /home/paul/.config/wallpapers/FalconHeavyNightLaunch-Cleaned.jpg, Setting up multilockscreen]
     - [sudo chsh -s /bin/zsh $USER, Changing shell to zsh]
     - [~/.config/i3/generate-config.sh, Generating i3 config]
-    - [python -m pip install ~/.config/scripts/keepass-dmenu, Installing keepass-dmenu]
+    - [python -m pip install ~/.scripts/keepass-dmenu, Installing keepass-dmenu]

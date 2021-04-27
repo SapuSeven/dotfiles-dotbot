@@ -13,7 +13,7 @@ COLOR_GREEN=43A047FF
 
 lock() {
 	i3lock \
-	 --image="$HOME/.config/scripts/arch-wallpaper-generator/bg.png" -C \
+	 --image="$HOME/.scripts/arch-wallpaper-generator/bg.png" -C \
 	 --color=$COLOR_BG \
 	 --force-clock \
 	 --pass-media-keys --pass-screen-keys --pass-power-keys --pass-volume-keys \
@@ -53,7 +53,7 @@ case "$1" in
         $logind poweroff
         ;;
     *)
-        echo "== ! i3exit: missing or invalid argument ! =="
+        echo "i3exit: missing or invalid argument"
         echo "Try again with: lock | logout | switch_user | suspend | hibernate | reboot | shutdown"
         exit 2
 esac
