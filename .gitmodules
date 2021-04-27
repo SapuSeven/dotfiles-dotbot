@@ -7,4 +7,4 @@
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "scripts/keepass-dmenu"]
 	path = scripts/keepass-dmenu
-	url = https://github.com/SapuSeven/keepass-dmenu
+	url = git@github.com:SapuSeven/keepass-dmenu.git
