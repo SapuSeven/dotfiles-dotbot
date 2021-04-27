@@ -41,6 +41,7 @@
     ~/.xinitrc:
     ~/.Xresources:
     ~/.Xkbmap:
+    ~/.zshenv:
     ~/.zprofile:
     ~/.zshrc:
 

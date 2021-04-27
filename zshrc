@@ -1,5 +1,3 @@
-export PATH=$HOME/.local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="/home/paul/.oh-my-zsh"
 
