@@ -32,10 +32,6 @@
     ~/.config/user-dirs.conf: config/user-dirs.conf
 
     ~/.aliases:
-    ~/.bash_profile:
-        force: true
-    ~/.bashrc:
-        force: true
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.gtkrc-2.0:
     ~/.nanorc:
