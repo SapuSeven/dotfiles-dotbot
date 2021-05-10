@@ -1,18 +1,23 @@
+These are the dotfiles I use on my personal Arch Linux installation.
+
 The dotfiles should work on any Arch-based system.
 
 ## Used packages
+_This list is manually updated and not guaranteed to be up-to-date._
 
-    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx brightnessctl sxhkd clipster ttf-dejavu i3exit playerctl lsof xclip mate-polkit
+    sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx brightnessctl sxhkd clipster ttf-dejavu playerctl lsof xclip mate-polkit
     yay -S xcursor-breeze lightdm-webkit-theme-sequoia-git
 
 ## Suggested packages
+_These are recommendations based on personal preference._
 
-- `okular` - PDF Viewer
-- `ark` - Archive Manager
+- `evince` - PDF Viewer
+- `xarchiver` - Archive Manager
+- `viewnior` - Image viewer
 
 # Installation
 
-This will place all customized dotfiles inside `~/.dotfiles` and symlink accordingly.
+The following commands will place all customized dotfiles inside `~/.dotfiles` and symlink accordingly:
 
     git clone https://github.com/SapuSeven/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
