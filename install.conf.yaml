@@ -36,6 +36,7 @@
     ~/.nanorc:
     ~/.oh-my-zsh:
     ~/.ssh/README.md: ssh/README.md
+    ~/.ssh/add-keys.sh: ssh/add-keys.sh
     ~/.xinitrc:
     ~/.Xkbmap:
     ~/.xprofile:
