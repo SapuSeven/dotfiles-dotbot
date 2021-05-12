@@ -16,7 +16,7 @@
 ;
 ;==========================================================
 
-include-file = ~/.themes/current/polybar.colors
+include-file = ~/.themes/adapta-amber-dark/polybar.colors
 
 [bar/main]
 enable-ipc = true
