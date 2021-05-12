@@ -5,8 +5,10 @@
 
 - clean:
     ~/:
-    ~/config:
+    ~/.config:
         recursive: true
+    ~/.local/share:
+    ~/.ssh:
 
 - link:
     ~/.config/dunst: config/dunst/
@@ -26,7 +28,6 @@
     ~/.config/vis: config/vis/
     ~/.config/wallpapers: config/wallpapers/
 
-    ~/.config/mimeapps.list: config/mimeapps.list
     ~/.config/user-dirs.dirs: config/user-dirs.dirs
     ~/.config/user-dirs.conf: config/user-dirs.conf
 
