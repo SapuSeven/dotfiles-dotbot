@@ -17,5 +17,5 @@ alias cpip=ipv4
 alias psgrep="ps -aux | grep"
 #alias k="git rev-parse --is-inside-work-tree &> /dev/null && k -h $@ || k -h --no-vcs $@"
 alias ka="k -A"
-alias sctl="systemctl"
+alias sctl="sudo systemctl"
 alias jctl="journalctl"
