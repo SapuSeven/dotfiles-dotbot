@@ -21,7 +21,7 @@
     ~/.config/qt5ct: config/qt5ct/
     ~/.config/ranger: config/ranger/
     ~/.config/rofi-pass: config/rofi-pass/
-    ~/.config/rofi: config/rofi/
+    ~/.config/rofi: config/rofi/1080p
     ~/.config/sxhkd: config/sxhkd/
     ~/.config/systemd: config/systemd/
     ~/.config/twmn: config/twmn/
@@ -48,6 +48,7 @@
 
     ~/.icons:
     ~/.local/share/fonts: local/share/fonts
+    ~/.local/share/fonts/rofi: config/rofi/fonts
     ~/.scripts:
     ~/.themes:
 
