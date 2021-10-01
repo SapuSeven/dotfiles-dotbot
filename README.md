@@ -19,7 +19,7 @@ _These are recommendations based on personal preference._
 
 The following commands will place all customized dotfiles inside `~/.dotfiles` and symlink accordingly:
 
-    git clone https://github.com/SapuSeven/dotfiles.git ~/.dotfiles
+    git clone git@github.com:SapuSeven/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
     ./install
 

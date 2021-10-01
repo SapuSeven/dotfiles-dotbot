@@ -189,7 +189,8 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt*pointerBlankDelay:          number
 ! URxvt*backspacekey:               string
 ! URxvt*deletekey:                  string
-! URxvt*print-pipe:                 string
+! Disable printing the terminal contents when pressing PrintScreen.
+URxvt*print-pipe: "cat > /dev/null"
 ! URxvt*modifier:                   modifier
 ! URxvt*cutchars:                   string
 ! URxvt*answerbackString:           string

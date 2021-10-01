@@ -8,3 +8,6 @@
 [submodule "scripts/keepass-dmenu"]
 	path = scripts/keepass-dmenu
 	url = git@github.com:SapuSeven/keepass-dmenu.git
+[submodule "config/rofi"]
+	path = config/rofi
+	url = git@github.com:SapuSeven/rofi-presets.git
