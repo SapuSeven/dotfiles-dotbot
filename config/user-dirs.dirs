@@ -1,10 +1,10 @@
 DATA=/run/media/paul/Data
 
-XDG_DESKTOP_DIR="$DATA/Desktop"
-XDG_DOWNLOAD_DIR="$DATA/Downloads"
-XDG_TEMPLATES_DIR="$DATA/Templates"
-XDG_PUBLICSHARE_DIR="$DATA/Public"
-XDG_DOCUMENTS_DIR="$DATA/Documents"
-XDG_MUSIC_DIR="$DATA/Music"
-XDG_PICTURES_DIR="$DATA/Pictures"
-XDG_VIDEOS_DIR="$DATA/Videos"
+XDG_DESKTOP_DIR="/run/media/paul/Data/Desktop"
+XDG_DOWNLOAD_DIR="/run/media/paul/Data/Downloads"
+XDG_TEMPLATES_DIR="/run/media/paul/Data/Templates"
+XDG_PUBLICSHARE_DIR="/run/media/paul/Data/Public"
+XDG_DOCUMENTS_DIR="/run/media/paul/Data/Documents"
+XDG_MUSIC_DIR="/run/media/paul/Data/Music"
+XDG_PICTURES_DIR="/run/media/paul/Data/Pictures"
+XDG_VIDEOS_DIR="/run/media/paul/Data/Videos"
