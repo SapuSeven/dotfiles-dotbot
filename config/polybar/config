@@ -43,7 +43,7 @@ font-1 = Symbols Nerd Font:style=Regular:size=12;4
 
 modules-left = i3
 ;modules-center = 
-modules-right = mpd github volume wlan eth memory cpu battery temperature date powermenu
+modules-right = mpd github volume battery-headset wlan eth memory cpu battery temperature date powermenu
 
 tray-position = center
 tray-padding = 2
@@ -293,6 +293,18 @@ animation-charging-4 = 
 animation-charging-5 = 
 animation-charging-6 = 
 animation-charging-foreground = ${colors.primary}
+
+[module/battery-headset]
+type = custom/script
+exec = until headsetcontrol -cb; do sleep 1; done
+exec-if = headsetcontrol -c
+
+label = %output%%
+
+format-prefix = "   "
+format-prefix-foreground = ${colors.primary}
+
+interval = 90
 
 [module/temperature]
 type = internal/temperature
