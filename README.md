@@ -6,7 +6,7 @@ The dotfiles should work on any Arch-based system.
 _This list is manually updated and not guaranteed to be up-to-date._
 
     sudo pacman -Syu xorg rxvt-unicode pcmanfm i3lock-color rofi nitrogen dunst xdotool bc numlockx brightnessctl sxhkd clipster ttf-dejavu playerctl lsof xclip mate-polkit
-    yay -S xcursor-breeze lightdm-webkit-theme-sequoia-git
+    yay -S xcursor-breeze lightdm-webkit-theme-sequoia-git nerd-fonts-jetbrains-mono
 
 ## Suggested packages
 _These are recommendations based on personal preference._
