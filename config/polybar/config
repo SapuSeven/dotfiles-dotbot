@@ -301,7 +301,7 @@ exec-if = headsetcontrol -c
 
 label = %output%%
 
-format-prefix = "   "
+format-prefix = "  "
 format-prefix-foreground = ${colors.primary}
 
 interval = 60
