@@ -28,7 +28,9 @@
     ~/.config/vis: config/vis/
     ~/.config/wallpapers: config/wallpapers/
 
-    ~/.config/user-dirs.dirs: config/user-dirs.dirs
+    ~/.config/user-dirs.dirs:
+      force: true
+      path: config/user-dirs.dirs
     ~/.config/user-dirs.conf: config/user-dirs.conf
 
     ~/.aliases:
