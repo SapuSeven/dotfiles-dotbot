@@ -28,6 +28,7 @@
     ~/.config/twmn: config/twmn/
     ~/.config/vis: config/vis/
     ~/.config/wallpapers: config/wallpapers/
+    ~/.config/waybar: config/waybar/
 
     ~/.config/user-dirs.dirs:
       force: true
