@@ -21,14 +21,17 @@
     ~/.config/qt5ct: config/qt5ct/
     ~/.config/ranger: config/ranger/
     ~/.config/rofi-pass: config/rofi-pass/
-    ~/.config/rofi: config/rofi/1080p
+    ~/.config/rofi: config/rofi/1080p/
+    ~/.config/sway: config/sway/
     ~/.config/sxhkd: config/sxhkd/
     ~/.config/systemd: config/systemd/
     ~/.config/twmn: config/twmn/
     ~/.config/vis: config/vis/
     ~/.config/wallpapers: config/wallpapers/
 
-    ~/.config/user-dirs.dirs: config/user-dirs.dirs
+    ~/.config/user-dirs.dirs:
+      force: true
+      path: config/user-dirs.dirs
     ~/.config/user-dirs.conf: config/user-dirs.conf
 
     ~/.aliases:
@@ -41,7 +44,7 @@
     ~/.xinitrc:
     ~/.Xkbmap:
     ~/.xprofile:
-    ~/.Xresources:
+    ~/.Xdefaults:
     ~/.zshenv:
     ~/.zprofile:
     ~/.zshrc:
