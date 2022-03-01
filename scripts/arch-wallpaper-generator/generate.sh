@@ -7,6 +7,8 @@ logoSize=300
 
 # Customize the settings above in generate.conf
 
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
 test -f ./generate.conf && source ./generate.conf
 
 mkdir .tmp
