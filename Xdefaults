@@ -67,7 +67,7 @@ URxvt.boldFont: xft:JetBrainsMono Nerd Font:Bold:size=10
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#222222
+URxvt.background:                 #222222
 URxvt*scrollBar:                  true
 URxvt*scrollBar_right:            true
 URxvt*scrollColor:                #d8d8d8
