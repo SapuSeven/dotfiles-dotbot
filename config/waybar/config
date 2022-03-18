@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "tray", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["mpd", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "clock", "custom/power"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -142,6 +142,10 @@
             "default": ["奄", "奔", "墳"]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/power": {
+        "format": "  ",
+        "on-click": "powermenu"
     },
     "custom/media": {
         "format": "{icon} {}",
