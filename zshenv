@@ -9,3 +9,6 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 #export GDK_SCALE=1
 #export GDK_DPI_SCALE=0.5
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export _JAVA_AWT_WM_NONREPARENTING=1
+export XCURSOR_THEME=Breeze
+export XCURSOR_SIZE=48

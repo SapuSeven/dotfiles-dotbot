@@ -38,6 +38,8 @@
     ~/.aliases:
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.gtkrc-2.0:
+      force: true
+      path: gtkrc-2.0
     ~/.nanorc:
     ~/.oh-my-zsh:
     ~/.ssh/README.md: ssh/README.md
@@ -63,6 +65,7 @@
     - [systemctl enable --user ssh-agent, Enabling ssh-agent service]
 #    - [multilockscreen -u /home/paul/.config/wallpapers/FalconHeavyNightLaunch-Cleaned.jpg, Setting up multilockscreen]
     - [sudo chsh -s /bin/zsh $USER, Changing shell to zsh]
+    - [./gsettings.sh, Importing gsettings]
     - [~/.config/i3/generate-config.sh, Generating i3 config]
     - [~/.scripts/arch-wallpaper-generator/generate.sh, Generating wallpaper]
     - [python -m pip install ~/.scripts/keepass-dmenu, Installing keepass-dmenu]

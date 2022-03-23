@@ -55,8 +55,8 @@ XTerm*selectToClipboard: true
 *color7:                          #d8d8d8
 *color15:                         #f8f8f8
 
-Xcursor.theme: xcursor-breeze
-Xcursor.size:  64
+Xcursor.theme: Breeze
+Xcursor.size:  48
 
 URxvt.font:     xft:JetBrainsMono Nerd Font:size=10
 URxvt.boldFont: xft:JetBrainsMono Nerd Font:Bold:size=10
