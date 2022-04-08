@@ -21,9 +21,13 @@ set $term foot
 
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
-workspace 1 output DP-2
-workspace 2 output DP-1
-workspace 3 output DP-3
+set $dp1 DP-1
+set $dp2 HDMI-A-1
+set $dp3 DP-2
+
+workspace 1 output $dp1
+workspace 2 output $dp2
+workspace 3 output $dp3
 
 floating_modifier $mod
 
@@ -40,9 +44,9 @@ output * bg ~/.scripts/arch-wallpaper-generator/bg.png fit #222222
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
-output DP-1 pos 0 196 res 1920x1080@60Hz
-output DP-2 pos 1920 196 res 3840x2160@60Hz scale 2
-output DP-3 pos 3840 0 transform 270
+output $dp2 pos 0 196 res 1920x1080@60Hz
+output $dp1 pos 1920 196 res 3840x2160@60Hz scale 2
+output $dp3 pos 3840 0 transform 270
 xwayland scale 2
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
