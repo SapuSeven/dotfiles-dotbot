@@ -11,3 +11,6 @@
 [submodule "config/rofi"]
 	path = config/rofi
 	url = git@github.com:SapuSeven/rofi-presets.git
+[submodule "themes/Colloid-kde"]
+	path = themes/Colloid-kde
+	url = https://github.com/vinceliuice/Colloid-kde.git
