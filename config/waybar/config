@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "tray", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "clock", "custom/power"],
+    "modules-right": ["pulseaudio", "network", "custom/battery-headset", "custom/battery-mouse", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "clock", "custom/power"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -76,7 +76,8 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d  %H:%M:%S}",
+        "interval": 1
     },
     "cpu": {
         "format": "{usage}% ",
@@ -126,19 +127,9 @@
     },
     "pulseaudio": {
         "scroll-step": 2, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "ﳌ {icon} {format_source}",
-        "format-muted": "ﳌ {format_source}",
-//        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format": "{volume}% {icon}",
+        "format-muted": "婢",
         "format-icons": {
-            "headphone": "",
-//            "hands-free": "",
-            "headset": "",
-            "phone": "",
-//            "portable": "",
-//            "car": "",
             "default": ["奄", "奔", "墳"]
         },
         "on-click": "pavucontrol"
@@ -158,6 +149,19 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/battery-headset": {
+        "format": "{}%  {icon} ",
+//        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""],
+        "interval": 60,
+        "exec": "until headsetcontrol -cb; do sleep 1; done",
+        "exec-if": "headsetcontrol -c"
+    },
+    "custom/battery-mouse": {
+        "format": "{}%  {icon}",
+//        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""],
+        "interval": 1,
+        "exec": "until rivalcfg --battery-level | sed -nr 's/^.* ([0-9]{2}) %$/\\1/p; t; q1'; do sleep 1; done"
     }
 }
 
